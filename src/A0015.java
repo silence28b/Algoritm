@@ -24,8 +24,5 @@ public class A0015 {
         }
         System.out.println(sum / 2);
 
-
-
-
     }
 }
