@@ -12,9 +12,8 @@ public class A0098 {
 
         int chap = 0;
         int ong = n - 1;
-        long sum1 = 0;
-        long sum2 = 0;
-        boolean birinchi_player = true;
+        int[] sum = new int[2];
+        int index = 0;
         while (chap <= ong) {
             int val;
             if (s[chap] >= s[ong]) {
@@ -24,14 +23,9 @@ public class A0098 {
                 val = s[ong];
                 ong--;
             }
-            if (birinchi_player) {
-                sum1 += val;
-            } else {
-                sum2 += val;
-            }
-            birinchi_player = !birinchi_player;
+            sum[(index++) % 2] += val;
         }
-        System.out.println(sum1 + ":" + sum2);
+        System.out.println(sum[0] + ":" + sum[1]);
 
 
     }
