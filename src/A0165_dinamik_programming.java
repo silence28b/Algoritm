@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A0165 {
+public class A0165_dinamik_programming {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
